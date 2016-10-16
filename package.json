@@ -1,0 +1,15 @@
+{
+  "name": "node-git",
+  "version": "0.0.0",
+  "description": "A node base git repo manager",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "git"
+  ],
+  "author": "Gopikrishna Sathyamurthy",
+  "license": "ISC"
+}

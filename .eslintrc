@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "sort-imports": [
+      2,
+      {
+        "memberSyntaxSortOrder": [
+          "multiple",
+          "single",
+          "all",
+          "none"
+        ]
+      }
+    ],
+    "sort-keys": [
+      "error",
+      "asc",
+      {
+        "natural": true
+      }
+    ]
+  }
+}

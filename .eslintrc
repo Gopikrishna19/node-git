@@ -1,5 +1,55 @@
 {
+  "env": {
+    "es6": true,
+    "node": true,
+    "commonjs": true
+  },
   "rules": {
+    "arrow-body-style": [
+      2,
+      "as-needed"
+    ],
+    "arrow-parens": [
+      2,
+      "as-needed"
+    ],
+    "comma-dangle": 2,
+    "new-cap": 2,
+    "newline-after-var": 2,
+    "newline-before-return": 2,
+    "no-console": 2,
+    "no-constant-condition": 2,
+    "no-debugger": 2,
+    "no-dupe-args": 2,
+    "no-dupe-class-members": 2,
+    "no-dupe-keys": 2,
+    "no-empty": [
+      2,
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "no-implicit-globals": 2,
+    "no-invalid-this": 2,
+    "no-unused-expressions": 2,
+    "no-unused-vars": 2,
+    "no-trailing-spaces": 2,
+    "no-var": 2,
+    "object-shorthand": 2,
+    "one-var": [
+      2,
+      {
+        "let": "always",
+        "const": "never"
+      }
+    ],
+    "padded-blocks": [
+      2,
+      "never"
+    ],
+    "prefer-arrow-callback": 2,
+    "prefer-const": 2,
+    "prefer-template": 2,
     "sort-imports": [
       2,
       {
@@ -12,11 +62,12 @@
       }
     ],
     "sort-keys": [
-      "error",
+      2,
       "asc",
       {
         "natural": true
       }
-    ]
+    ],
+    "sort-vars": 2
   }
 }

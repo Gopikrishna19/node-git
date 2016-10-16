@@ -5,7 +5,7 @@ const isDev = args.find(arg => arg === '--dev');
 
 const config = {
   entry: [
-    './app/app.js'
+    './app/index.js'
   ],
   module: {
     loaders: [

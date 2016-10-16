@@ -1,7 +1,8 @@
 module.exports = {
   devtool: 'source-map',
   entry: [
-    'webpack/hot/only-dev-server'
+    'webpack/hot/only-dev-server',
+    './app/index.js'
   ],
   module: {
     loaders: [

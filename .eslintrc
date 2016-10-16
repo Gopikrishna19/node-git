@@ -29,6 +29,8 @@
     ],
     "comma-dangle": 2,
     "curly": 2,
+    "eol-last": 2,
+    "eqeqeq": 2,
     "jsx-quotes": [
       2,
       "prefer-single"

@@ -125,6 +125,7 @@
       "never"
     ],
     "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
     "react/prefer-es6-class": 2,
     "react/prefer-stateless-function": 2,
     "react/prop-types": 2,

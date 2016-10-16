@@ -17,7 +17,7 @@ server.connection({
 server.route({
   handler: (request, reply) => reply.view('index'),
   method: 'GET',
-  path: '/'
+  path: '/{path*}'
 });
 
 server.register(Vision, err => {

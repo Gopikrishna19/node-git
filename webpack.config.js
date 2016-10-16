@@ -1,9 +1,10 @@
 const Webpack = require('webpack');
 
-module.exports = {
-  devtool: 'source-map',
+const args = process.argv.filter(arg => /^--/.test(arg));
+const isDev = args.find(arg => arg === '--dev');
+
+const config = {
   entry: [
-    'webpack-hot-middleware/client',
     './app/app.js'
   ],
   module: {
@@ -18,8 +19,15 @@ module.exports = {
   output: {
     filename: 'index.js',
     path: `${__dirname}/dist`
-  },
-  plugins: [
-    new Webpack.HotModuleReplacementPlugin()
-  ]
+  }
 };
+
+if (isDev) {
+  config.devtool = 'source-map';
+  config.entry.unshift('webpack-hot-middleware/client');
+  config.plugins = [
+    new Webpack.HotModuleReplacementPlugin()
+  ];
+}
+
+module.exports = config;

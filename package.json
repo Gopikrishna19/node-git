@@ -4,7 +4,8 @@
   "description": "A node base git repo manager",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node server"
+    "start": "babel-node server --dev",
+    "start:prod": "babel-node server"
   },
   "keywords": [
     "node",
@@ -13,15 +14,6 @@
   "author": "Gopikrishna Sathyamurthy",
   "license": "ISC",
   "dependencies": {
-    "material-ui": "^0.16.0",
-    "node-git-api": "0.0.0",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
-    "react-redux": "^4.4.5",
-    "react-tap-event-plugin": "^1.0.0",
-    "redux": "^3.6.0"
-  },
-  "devDependencies": {
     "babel-cli": "^6.16.0",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
@@ -33,7 +25,14 @@
     "hapi": "^15.1.1",
     "hapi-react-views": "^9.2.0",
     "hapi-webpack-plugin": "^1.3.0",
+    "material-ui": "^0.16.0",
+    "node-git-api": "0.0.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
     "react-hot-loader": "^3.0.0-beta.6",
+    "react-redux": "^4.4.5",
+    "react-tap-event-plugin": "^1.0.0",
+    "redux": "^3.6.0",
     "tcomb": "^3.2.15",
     "vision": "^4.1.0",
     "webpack": "^1.13.2",

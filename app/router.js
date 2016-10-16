@@ -1,5 +1,6 @@
-import {Route, Router, browserHistory} from 'react-router';
+import {IndexRoute, Route, Router, browserHistory} from 'react-router';
 import AppProvider from './provider';
+import Home from './home';
 import React from 'react';
 
 const AppRouter = () =>
@@ -7,7 +8,9 @@ const AppRouter = () =>
     <Route
       component={AppProvider}
       path='/'
-    />
+    >
+      <IndexRoute component={Home}/>
+    </Route>
     <Route
       component={() => <div>404 Not Found</div>}
       path='*'

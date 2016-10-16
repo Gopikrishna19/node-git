@@ -32,7 +32,7 @@ server.register(Vision, err => {
     engines: {
       js: HapiReactViews
     },
-    path: '.',
+    path: './app',
     relativeTo: __dirname
   });
 });

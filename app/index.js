@@ -1,10 +1,22 @@
 import React from 'react';
 
-const App = () =>
-  <h1>
-    Welcome to my App!
-  </h1>;
+const Index = () =>
+  <html>
+    <head>
+      <title>{'NodeGit'}</title>
+      <link
+        href='data:,'
+        rel='icon'
+      />
+    </head>
+    <body>
+      <div id='content'/>
+      <script
+        src='index.js'
+      />
+    </body>
+  </html>;
 
-App.displayName = 'App';
+Index.displayName = 'Index';
 
-export default App;
+export default Index;

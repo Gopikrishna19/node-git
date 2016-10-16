@@ -4,7 +4,7 @@
   "description": "A node base git repo manager",
   "main": "index.js",
   "scripts": {
-    "start": "babel-node index"
+    "start": "babel-node server"
   },
   "keywords": [
     "node",

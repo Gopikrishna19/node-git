@@ -122,7 +122,7 @@
     "react/jsx-sort-props": 2,
     "react/jsx-space-before-closing": [
       2,
-      "always"
+      "never"
     ],
     "react/jsx-uses-react": 2,
     "react/prefer-es6-class": 2,

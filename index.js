@@ -12,6 +12,10 @@ const Index = () =>
         href='https://fonts.googleapis.com/css?family=Roboto:300'
         rel='stylesheet'
       />
+      <meta
+        content='width=device-width'
+        name='viewport'
+      />
     </head>
     <body>
       <div id='content'/>

@@ -13,6 +13,11 @@ const config = {
         exclude: /node_modules/,
         loader: 'babel?sourceMap',
         test: /\.js$/
+      },
+      {
+        exclude: /node_modules/,
+        loader: 'style!css!sass',
+        test: /\.scss/
       }
     ]
   },

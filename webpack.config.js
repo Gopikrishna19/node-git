@@ -16,7 +16,7 @@ const config = {
       },
       {
         exclude: /node_modules/,
-        loader: 'style!css!sass',
+        loader: 'style!css!postcss!sass',
         test: /\.scss/
       }
     ]
@@ -24,7 +24,10 @@ const config = {
   output: {
     filename: 'index.js',
     path: `${__dirname}/dist`
-  }
+  },
+  postcss: [
+    require('lost')
+  ]
 };
 
 if (isDev) {

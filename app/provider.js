@@ -3,7 +3,7 @@ import Master from './master';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {Provider} from 'react-redux';
 import {getStore} from './store';
-import theme from './styles/theme';
+import theme from './shared/styles/theme';
 
 const AppProvider = props =>
   <Provider store={getStore()}>

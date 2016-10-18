@@ -8,7 +8,7 @@ import './master.scss';
 const Master = props =>
   <div>
     <AppBar
-      onLeftIconButtonTouchTap={props.toggleDrawer}
+      onLeftIconButtonTouchTap={() => props.toggleDrawer(true)}
       title={<Title/>}
     />
 

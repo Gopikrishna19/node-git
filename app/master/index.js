@@ -11,6 +11,6 @@ export default connect(
   (state, dispatch, props) => ({
     ...state,
     ...props,
-    toggleDrawer: state.isDrawerOpen ? dispatch.closeDrawer : dispatch.openDrawer
+    toggleDrawer: dispatch.toggleDrawer
   })
 )(Master);

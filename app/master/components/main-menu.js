@@ -5,22 +5,28 @@ import IconButton from 'material-ui/IconButton';
 import {Link} from 'react-router';
 import MenuItem from 'material-ui/MenuItem';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
+import NavigationHome from 'material-ui/svg-icons/action/home';
 
 const MainMenu = props =>
   <Drawer open={props.isDrawerOpen}>
     <AppBar
       iconElementLeft={
-        <IconButton onClick={props.toggleDrawer}>
+        <IconButton onClick={() => props.toggleDrawer(false)}>
           <NavigationClose/>
         </IconButton>
       }
       zDepth={0}
     />
-    <MenuItem>
-      <Link to='/repository/create'>
+    <Link to='/'>
+      <MenuItem leftIcon={<NavigationHome/>}>
+        Home
+      </MenuItem>
+    </Link>
+    <Link to='/repository/create'>
+      <MenuItem insetChildren={true}>
         Create Repository
-      </Link>
-    </MenuItem>
+      </MenuItem>
+    </Link>
   </Drawer>;
 
 MainMenu.displayName = 'MainMenu';

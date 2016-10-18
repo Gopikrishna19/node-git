@@ -1,23 +1,16 @@
 import React, {PropTypes} from 'react';
-import AppBar from 'material-ui/AppBar';
+import Master from './master';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {Provider} from 'react-redux';
 import {getStore} from './store';
 import theme from './styles/theme';
 
-const Title = () =>
-  <span>
-    Node
-    <b>Git</b>
-  </span>;
-
 const AppProvider = props =>
   <Provider store={getStore()}>
     <MuiThemeProvider muiTheme={theme}>
-      <div>
-        <AppBar title={<Title/>}/>
+      <Master>
         {props.children}
-      </div>
+      </Master>
     </MuiThemeProvider>
   </Provider>;
 

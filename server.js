@@ -4,6 +4,7 @@ import Vision from 'vision';
 import Webpack from 'webpack';
 import WebpackPlugin from 'hapi-webpack-plugin';
 import config from './webpack.config';
+import {registerRoutes} from './api';
 
 const compiler = new Webpack(config);
 const assets = {noInfo: true};
@@ -14,10 +15,12 @@ server.connection({
   port: '8080'
 });
 
+registerRoutes(server);
+
 server.route({
   handler: (request, reply) => reply.view('index'),
   method: 'GET',
-  path: '/{path*}'
+  path: '/'
 });
 
 server.register(Vision, err => {

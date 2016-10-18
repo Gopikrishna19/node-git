@@ -3,7 +3,10 @@ import {actionCreators} from './store';
 import {connect} from 'react-redux';
 
 export default connect(
-  ({isDrawerOpen}) => ({isDrawerOpen}),
+  state => ({
+    isDrawerOpen: state.isDrawerOpen,
+    isLoading: state.loadingCounter > 0
+  }),
   actionCreators,
   (state, dispatch, props) => ({
     ...state,

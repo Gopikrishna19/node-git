@@ -1,0 +1,8 @@
+i.progress {
+  display: block;
+  visibility: hidden;
+
+  &.is-loading {
+    visibility: visible;
+  }
+}

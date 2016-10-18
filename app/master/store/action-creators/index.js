@@ -1,5 +1,7 @@
 import * as drawer from './drawer';
+import * as progress from './progress';
 
 export default {
-  ...drawer
+  ...drawer,
+  ...progress
 };

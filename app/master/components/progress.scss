@@ -1,6 +1,7 @@
 i.progress {
   display: block;
   visibility: hidden;
+  padding-top: 64px;
 
   &.is-loading {
     visibility: visible;

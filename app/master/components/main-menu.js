@@ -6,6 +6,7 @@ import {Link} from 'react-router';
 import MenuItem from 'material-ui/MenuItem';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 import NavigationHome from 'material-ui/svg-icons/action/home';
+import Title from './title';
 
 const MainMenu = props =>
   <Drawer
@@ -19,6 +20,7 @@ const MainMenu = props =>
           <NavigationClose/>
         </IconButton>
       }
+      title={<Title/>}
       zDepth={0}
     />
     <Link to='/'>

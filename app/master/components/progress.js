@@ -4,11 +4,12 @@ import Overlay from 'material-ui/internal/Overlay';
 import './progress.scss';
 
 const progressStyle = {
-  borderRadius: 0
+  borderRadius: 0,
+  zIndex: 1301
 };
 const overlayStyle = {
   top: '68px',
-  zIndex: 1
+  zIndex: 1301
 };
 
 const Progress = props =>

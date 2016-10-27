@@ -16,11 +16,15 @@ const getDrawerState = props => {
   };
 };
 const getStyles = props => {
-  if(isOnDesktop(props)) {
-    return {
-      zIndex: 1301
-    };
+  const styles = {
+    position: 'fixed'
+  };
+
+  if (isOnDesktop(props)) {
+    styles.zIndex = 1301;
   }
+
+  return styles;
 };
 
 const Master = props =>

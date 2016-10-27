@@ -8,7 +8,11 @@ import NavigationClose from 'material-ui/svg-icons/navigation/close';
 import NavigationHome from 'material-ui/svg-icons/action/home';
 
 const MainMenu = props =>
-  <Drawer open={props.isDrawerOpen}>
+  <Drawer
+    docked={props.isDesktop}
+    open={props.isDrawerOpen}
+    zDepth={0}
+  >
     <AppBar
       iconElementLeft={
         <IconButton onClick={() => props.toggleDrawer(false)}>
@@ -31,6 +35,7 @@ const MainMenu = props =>
 
 MainMenu.displayName = 'MainMenu';
 MainMenu.propTypes = {
+  isDesktop: PropTypes.bool.isRequired,
   isDrawerOpen: PropTypes.bool.isRequired,
   toggleDrawer: PropTypes.func.isRequired
 };

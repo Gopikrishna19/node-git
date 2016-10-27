@@ -5,6 +5,7 @@ const isDev = args.find(arg => arg === '--dev');
 
 const config = {
   entry: [
+    'babel-polyfill',
     'whatwg-fetch',
     './app/index.js'
   ],

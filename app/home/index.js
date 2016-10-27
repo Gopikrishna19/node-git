@@ -1,10 +1,14 @@
-import React from 'react';
+import RepoList from './components/repo-list';
+import {actionCreators} from './store';
+import {connect} from 'react-redux';
 
-const Home = () =>
-  <h1>
-    Welcome to my AppProvider!!!
-  </h1>;
-
-Home.displayName = 'Home';
-
-export default Home;
+export default connect(
+  state => ({
+    repos: state.repos
+  }),
+  actionCreators,
+  (state, dispatch) => ({
+    ...state,
+    setRepositories: dispatch.setRepositories
+  })
+)(RepoList);

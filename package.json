@@ -42,7 +42,8 @@
     "tcomb": "^3.2.15",
     "vision": "^4.1.0",
     "webpack": "^1.13.2",
-    "webpack-hot-middleware": "^2.13.0"
+    "webpack-hot-middleware": "^2.13.0",
+    "whatwg-fetch": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.0.0",

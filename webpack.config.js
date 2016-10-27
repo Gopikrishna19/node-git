@@ -5,6 +5,7 @@ const isDev = args.find(arg => arg === '--dev');
 
 const config = {
   entry: [
+    'whatwg-fetch',
     './app/index.js'
   ],
   module: {

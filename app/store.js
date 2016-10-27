@@ -1,5 +1,6 @@
-import {combineReducers, createStore} from 'redux';
+import {applyMiddleware, combineReducers, compose, createStore} from 'redux';
 import {reducers as master} from './master/store';
+import thunk from 'redux-thunk';
 
 let store;
 
@@ -9,7 +10,10 @@ export const getStore = () => {
       combineReducers({
         ...master
       }),
-      window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+      {},
+      (window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose)(
+        applyMiddleware(thunk)
+      )
     );
   }
 

@@ -2,6 +2,7 @@
   "env": {
     "es6": true
   },
+  "parser": "babel-eslint",
   "parserOptions": {
     "sourceType": "module",
     "ecmaFeatures": {
@@ -10,14 +11,15 @@
     }
   },
   "plugins": [
-    "react"
+    "react",
+    "babel"
   ],
   "rules": {
     "arrow-body-style": [
       2,
       "as-needed"
     ],
-    "arrow-parens": [
+    "babel/arrow-parens": [
       2,
       "as-needed"
     ],

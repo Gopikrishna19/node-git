@@ -29,7 +29,7 @@
     "lost": "^7.1.0",
     "material-ui": "^0.16.0",
     "node-git-api": "Gopikrishna19/node-git-api#master",
-    "node-sass": "^3.10.1",
+    "node-sass": "^4.14.1",
     "postcss-loader": "^1.0.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
